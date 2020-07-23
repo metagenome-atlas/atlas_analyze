@@ -41,7 +41,7 @@ for header in ['KO','CAZy']:
         #remove prefix 'KO:'
         mapping= mapping.str[3:]
 
-    mapping.to_csv(f'Genecatalog/annotations/{header}.tsv',sep='\t')
+    mapping.to_csv(f'Genecatalog/annotations/{header}.tsv',sep='\t',header=True)
 
     # take only annotation of genes from genomes
     mapping= mapping.loc[mapping.index.intersection(genes_in_genomes).unique()]
@@ -54,7 +54,7 @@ for header in ['KO','CAZy']:
     #annotation_genome= gene2genome.join(mapping,on='Gene').groupby([header,'MAG']).Ncopies.sum()
 
         out_file= f'genomes/annotations/{header}.tsv'
-        matrix.to_csv(out_file,sep='\t')
+        matrix.to_csv(out_file,sep='\t',header=True)
 
         #cmp= sns.clustermap(matrix.T)
         #cmp.fig.suptitle(header)
