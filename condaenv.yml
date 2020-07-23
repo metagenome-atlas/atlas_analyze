@@ -1,0 +1,15 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.6
+  - snakemake>=5.10
+  - pandas>=1
+  - matplotlib>=3.1
+  - seaborn>=0.9
+  - jupyterlab_server>=1.1.4
+  - jupyterlab>=1.2.3
+  - altair>=4
+  - scikit-bio>=0.5.5
+  - scikit-learn>=0.21.3
