@@ -22,7 +22,7 @@ Get mamba the faster version of conda
 
 ```
 ./setup.sh
-mamba activate analyze
+conda activate analyze
 ```
 
 ### Start analyzing
