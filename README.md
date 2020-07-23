@@ -30,7 +30,7 @@ mamba activate analyze
 
 analyze.py path/to/atlas_workingdir
 
-``
+```
 
 
 For an example see this [notebook](scripts/Analyis_genome_abundances.ipynb)
