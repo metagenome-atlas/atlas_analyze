@@ -2,9 +2,7 @@
 
 import os,sys
 from snakemake.shell import shell
-
-
-
+path= os.path.dirname(__file__)
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -22,6 +20,6 @@ if not (os.path.exists(atlas_folder) & os.path.exists(os.path.join(atlas_folder,
 shell(
     "snakemake "
     "-d {atlas_folder} "
-    "-j 1 "
+    "-j 1 -s {path}/Snakefile "
     "{snakemake_args}"
     )
