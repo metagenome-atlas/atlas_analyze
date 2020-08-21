@@ -13,15 +13,14 @@ cd atlas_analyze
 ```
 
 
-Get mamba the faster version of conda
-
-`conda install -c conda-forge mamba `
-
 
 ### Easy set up
 
+Run simple `./setup.sh`
+
+Then activate the environment:
+
 ```
-./setup.sh
 conda activate analyze
 ```
 
