@@ -87,7 +87,7 @@ rule convert_nb:
     output:
         "Results/Summary.html"
     shell:
-        "jupyter nbconvert --output Summary --TemplateExporter.exclude_input=True {input}"
+        "jupyter nbconvert --output Summary --to=html --TemplateExporter.exclude_input=True {input}"
 
 rule get_mapping_rate:
     input:
