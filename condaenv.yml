@@ -5,6 +5,7 @@ channels:
 dependencies:
   - python=3.7
   - snakemake>=5.10
+  - numpy=1.16.5 # stay with old numpy
   - pandas<1  # stay with old pandas
   - matplotlib>=3.1
   - seaborn>=0.9
